@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --warm-grey-50 :rgb(136, 136, 136,0.5);
+    --ff-open-sans:'Open Sans', sans-serif;;
+    --white-color:#fff;
+    --black-color:#000;
+    --black-60:rgba(0, 0, 0, 0.6);
+    --black-five:#323232;
+    --clear-blue:#2086fb;
+    --light-grey:#c4c4c46f;
+    --clear-white:#c8c4bc;
+    --greyish:#9b9b9b;
+    --whitish:#dcdcdc;
+    --grey:#858585;
+    --blackish:#252525;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*********** Header Section Start *************/
+.header{
+    width: 100%;
+    height: 598px;
+    background: url(https://drive.google.com/uc?export=view&id=1lNSvvd6wUo40dZ2VIDzQTW3JjuWvP693 );
+    background-size: cover;
+    background-position: center;
+    background-color: var(--black-60);
+     
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--black-60);
+}
+nav{ 
+    position: sticky;
+    top: 0;
+}
+ 
+ 
+.navigation-menu{
+    width: 100%;
+    height: 68px;
+    text-align: center;
+    padding: 12px 12px;
+    opacity: 0.9;
+    box-shadow: 0 2px 4px 0 var(--warm-grey-50);
+    background-color:var(--light-grey);
+    margin-bottom: 147px;
+    display: flow-root;
+}
+.navigation-menu  li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-link{
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 31px;
+    font-family: var(--ff-open-sans);
+ 
+}
+.nav-link a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.navigation-menu a:hover,a:active{
+    color: var(--black-color);
+}
+.navigation-menu a:visited{
+    color: var(--white-color);
+}
+.logo{
+    width: 76px;
+    height: 44px;
+    margin-left:40px ;
+    float: left;
+}
+.logo a{
+    line-height: 0;
+    display:block;
+}
+.nav-btn{
+    float: right;
+    padding: 14px 10px 14px 10px ;
+    margin-right: 48px;
+    width: 129px;
+    background-color: var(--clear-blue);
+    border-radius: 22px;
+    font-family: var(--ff-open-sans);
+}
+.nav-btn a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.banner-content-1{
+    width: 813px;
+    margin: 0 auto;
+    font-family: var(--ff-open-sans);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white-color);
+}
+.banner-search-content{
+    padding-top: 24px;
+}
+.search-outer-container{
+    width: 936px;
+    height: 64px;
+    padding: 6px 5px 5px;
+    opacity: 0.9;
+    border-radius: 4px;
+    background-color:var(--clear-white);
+    margin: 0 auto;
+    
+}
+.search-contanier{
+    width: 926px;
+    height: 53px;
+    padding: 15px 20px 16px;
+    background-color: var(--white-color);
+}
+     
+#search-text-container{
+    width: 367px;
+    height: 22px;
+    font-size: 16px;
+    color: var(--greyish);
+    border: none;
+    font-family: var(--ff-open-sans);
+
+}
+.search-icon{
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color: var(--greyish-brown);
+}
+/******** search box end **********/
+
+/*********** Header Section End ***************/
+
+
+/*********** Main Section start ***************/
+.grid-container{
+   display: flow-root;
+   margin: 0 auto;
+   padding: 0 15px;
+   padding-top: 41px;
+}
+.grid{
+    width: calc((100% - 64px) / 4);
+    height: 328px;
+    margin-right: 16px;
+    border-right: 1px solid var(--whitish);
+    float: left;
+}
+.b-1{
+    text-align: center;
+    padding:52px 32px 62px 32px;
+}
+.grid h6{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--ff-open-sans);
+}
+.grid p{
+    font-family: var(--ff-open-sans);
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color:var(--grey);
+}
+#last{
+    text-align: center;
+    margin-right: 0;
+    padding: 52px 32px 62px 32px;
+    border: none;
+} 
+/* general */
+.heading-general{
+    margin: 24px 42px 0px 42px;   
+}
+/* implementing */
+.heading-implementing{
+    margin: 24px 50px 0px 50px; 
+}
+/* tutorial*/
+.heading-tutorial{
+    margin: 24px 50px 0px 50px;
+}
+/* last */
+.heading-basic{
+    margin: 24px 35px 0 35px;
+}
+ /*hr  */
+.line{
+    height: 1px;
+    width:calc(100% - 80px);
+    color: var(--whitish);
+    margin: 0 auto;
+}
+/* 2 row */
+.grid-container-1{
+    display: flow-root;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-bottom: 32px;
+}
+.b-2{
+    text-align: center;
+    padding:61px 32px 62px 32px;
+}
+#last-2{
+    text-align: center;
+    margin-right: 0;
+    padding: 61px 32px 62px 32px;
+    border: none;
+}
+ /* how to */
+ .heading-how{
+    margin: 24px 80px 0px 80px;
+}
+/* api */
+.heading-api{
+    margin: 24px 51px 0px 52px;
+}
+/* trouble */
+.heading-trouble{
+    margin: 24px 42px 0px 42px;
+}
+/* costumer */
+.heading-costumer{
+    margin: 24px 20px 0px 20px;
+}
+
+ 
+
+/*********** Sub-Footer Section start ***************/
+ 
+.sub-footer{
+    background-color: var(--black-five);
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom:69px ;
+}
+.sub-footer-content{
+    margin: 0 auto;
+    font-family: var(--ff-open-sans);
+    font-weight: 600;
+    text-align: center;
+    color: var(--white-color);
+
+}
+.sub-footer h4{
+    font-size: 30px;
+}
+.chat{
+    padding-top: 4px;
+    font-size: 16px;
+}
+.request-container{
+    padding-top: 48px;
+}
+.request-btn{
+    margin: 0 auto;
+    width: 223px;
+    height: 40px;
+    padding: 10px 31px 12px 25px;
+    text-align: center;
+    border-radius: 22px;
+    background-color: var(--clear-blue);
+}
+.request-btn a{
+    font-family: var(--ff-open-sans);
+    width: 127px;
+    height: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white-color);
+    text-decoration: none;
+}
+.request-btn a:hover{
+    color: var(--black-color);
+}
+/*********** Sub-Footer Section End ***************/
+
+
+/******** Footer Section *********/
+footer{
+    width: 100%;
+    padding: 25px 0 24px 40px;
+    background-color:var(--blackish);
+}
+.copyright-text{
+    font-family: var(--ff-open-sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+.back-to-top{
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    padding: 5px 5px 0 5px;
+    background-color: #4a4a4a;
+    position:fixed;
+    bottom: 50px;
+    left:calc(100% - 50px);
+}
+.back-to-top a{
+    display: inline-block;
+    line-height: 0;
+}
+/******** Footer Section End *********/
