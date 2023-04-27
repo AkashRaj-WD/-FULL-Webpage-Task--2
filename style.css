@@ -23,9 +23,8 @@
     box-sizing: border-box;
 
 }
-
 /*********** Header Section Start *************/
-.header{
+.codeco-header{
     width: 100%;
     height: 598px;
     background: url(https://drive.google.com/uc?export=view&id=1lNSvvd6wUo40dZ2VIDzQTW3JjuWvP693 );
@@ -33,9 +32,8 @@
     background-position: center;
     background-color: var(--black-60);
      
-    
 }
-.overlay{
+.codeco-header_overlay{
     width: 100%;
     height: 100%;
     position: relative;
@@ -43,13 +41,13 @@
     left: 0;
     background-color: var(--black-60);
 }
-nav{ 
+.codeco-navigation{ 
     position: sticky;
     top: 0;
 }
  
  
-.navigation-menu{
+.codeco-navigation_menulist{
     width: 100%;
     height: 68px;
     text-align: center;
@@ -60,11 +58,11 @@ nav{
     margin-bottom: 147px;
     display: flow-root;
 }
-.navigation-menu  li{
+.codeco-navigation_menulist li{
     display: inline-block;
     list-style: none;
 }
-.nav-link{
+.codeco-navigation_menu-link{
     padding: 12px 0;
     font-size: 14px;
     font-weight: bold;
@@ -72,27 +70,27 @@ nav{
     font-family: var(--ff-open-sans);
  
 }
-.nav-link a{
+.codeco-navigation_menu-link a{
     color: var(--white-color);
     text-decoration: none;
 }
-.navigation-menu a:hover,a:active{
+.codeco-navigation_menulist a:hover,a:active{
     color: var(--black-color);
 }
-.navigation-menu a:visited{
+.codeco-navigation_menulist a:visited{
     color: var(--white-color);
 }
-.logo{
+.codeco-navigation_logo{
     width: 76px;
     height: 44px;
     margin-left:40px ;
     float: left;
 }
-.logo a{
+.codeco-navigation_logo a{
     line-height: 0;
     display:block;
 }
-.nav-btn{
+.codeco-navigation_trynow-btn{
     float: right;
     padding: 14px 10px 14px 10px ;
     margin-right: 48px;
@@ -101,11 +99,11 @@ nav{
     border-radius: 22px;
     font-family: var(--ff-open-sans);
 }
-.nav-btn a{
+.codeco-navigation_trynow-btn a{
     color: var(--white-color);
     text-decoration: none;
 }
-.banner-content-1{
+.codeco-banner_heading{
     width: 813px;
     margin: 0 auto;
     font-family: var(--ff-open-sans);
@@ -114,10 +112,10 @@ nav{
     text-align: center;
     color: var(--white-color);
 }
-.banner-search-content{
+.codeco-search_content{
     padding-top: 24px;
 }
-.search-outer-container{
+.codeco-search_outercontainer{
     width: 936px;
     height: 64px;
     padding: 6px 5px 5px;
@@ -127,14 +125,14 @@ nav{
     margin: 0 auto;
     
 }
-.search-contanier{
+.codeco-search_contanier{
     width: 926px;
     height: 53px;
     padding: 15px 20px 16px;
     background-color: var(--white-color);
 }
      
-#search-text-container{
+#codeco-search_input{
     width: 367px;
     height: 22px;
     font-size: 16px;
@@ -143,7 +141,7 @@ nav{
     font-family: var(--ff-open-sans);
 
 }
-.search-icon{
+.codeco-search_icon{
     float: right;
     width: 20px;
     height: 20px;
@@ -155,30 +153,30 @@ nav{
 
 
 /*********** Main Section start ***************/
-.grid-container{
+.grid-container_first-row{
    display: flow-root;
    margin: 0 auto;
    padding: 0 15px;
    padding-top: 41px;
 }
-.grid{
+.grid-container_box {
     width: calc((100% - 64px) / 4);
     height: 328px;
     margin-right: 16px;
     border-right: 1px solid var(--whitish);
     float: left;
 }
-.b-1{
+.card-1{
     text-align: center;
     padding:52px 32px 62px 32px;
 }
-.grid h6{
+.grid-container_box  h6{
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     font-family: var(--ff-open-sans);
 }
-.grid p{
+.grid-container_box  p{
     font-family: var(--ff-open-sans);
     margin: 10px 0 0;
     font-size: 16px;
@@ -186,66 +184,66 @@ nav{
     text-align: center;
     color:var(--grey);
 }
-#last{
+#last-box_1{
     text-align: center;
     margin-right: 0;
     padding: 52px 32px 62px 32px;
     border: none;
 } 
 /* general */
-.heading-general{
+.box-heading_general{
     margin: 24px 42px 0px 42px;   
 }
 /* implementing */
-.heading-implementing{
+.box-heading_implementing{
     margin: 24px 50px 0px 50px; 
 }
 /* tutorial*/
-.heading-tutorial{
+.box-heading_tutorial{
     margin: 24px 50px 0px 50px;
 }
 /* last */
-.heading-basic{
+.box-heading_basic{
     margin: 24px 35px 0 35px;
 }
  /*hr  */
-.line{
+.line-break{
     height: 1px;
     width:calc(100% - 80px);
     color: var(--whitish);
     margin: 0 auto;
 }
 /* 2 row */
-.grid-container-1{
+.grid-container_second-row{
     display: flow-root;
     margin: 0 auto;
     padding: 0 15px;
     padding-bottom: 32px;
 }
-.b-2{
+.card-2{
     text-align: center;
     padding:61px 32px 62px 32px;
 }
-#last-2{
+#last-box_2{
     text-align: center;
     margin-right: 0;
     padding: 61px 32px 62px 32px;
     border: none;
 }
  /* how to */
- .heading-how{
+ .box-heading_how{
     margin: 24px 80px 0px 80px;
 }
 /* api */
-.heading-api{
+.box-heading_api{
     margin: 24px 51px 0px 52px;
 }
 /* trouble */
-.heading-trouble{
+.box-heading_trouble{
     margin: 24px 42px 0px 42px;
 }
 /* costumer */
-.heading-costumer{
+.box-heading_costumer{
     margin: 24px 20px 0px 20px;
 }
 
@@ -253,13 +251,13 @@ nav{
 
 /*********** Sub-Footer Section start ***************/
  
-.sub-footer{
+.sub-footer_container{
     background-color: var(--black-five);
     width: 100%;
     padding-top: 64px;
     padding-bottom:69px ;
 }
-.sub-footer-content{
+.sub-footer_content{
     margin: 0 auto;
     font-family: var(--ff-open-sans);
     font-weight: 600;
@@ -267,17 +265,17 @@ nav{
     color: var(--white-color);
 
 }
-.sub-footer h4{
+.sub-footer_container h4{
     font-size: 30px;
 }
 .chat{
     padding-top: 4px;
     font-size: 16px;
 }
-.request-container{
+.sub-footer_request-container{
     padding-top: 48px;
 }
-.request-btn{
+.sub-footer_request-button{
     margin: 0 auto;
     width: 223px;
     height: 40px;
@@ -286,7 +284,7 @@ nav{
     border-radius: 22px;
     background-color: var(--clear-blue);
 }
-.request-btn a{
+.sub-footer_request-button a{
     font-family: var(--ff-open-sans);
     width: 127px;
     height: 18px;
@@ -296,7 +294,7 @@ nav{
     color: var(--white-color);
     text-decoration: none;
 }
-.request-btn a:hover{
+.sub-footer_request-button a:hover{
     color: var(--black-color);
 }
 /*********** Sub-Footer Section End ***************/
@@ -308,13 +306,13 @@ footer{
     padding: 25px 0 24px 40px;
     background-color:var(--blackish);
 }
-.copyright-text{
+.footer-copyright_content{
     font-family: var(--ff-open-sans);
     font-size: 14px;
     font-weight: 600;
     color: var(--white-color);
 }
-.back-to-top{
+.footer-back_to_top-btutton{
     width: 28px;
     height: 28px;
     border-radius: 4px;
@@ -324,7 +322,7 @@ footer{
     bottom: 50px;
     left:calc(100% - 50px);
 }
-.back-to-top a{
+.footer-back_to_top-btutton a{
     display: inline-block;
     line-height: 0;
 }
