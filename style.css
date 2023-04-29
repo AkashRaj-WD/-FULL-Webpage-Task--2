@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root{
@@ -14,26 +15,22 @@
     --whitish:#dcdcdc;
     --grey:#858585;
     --blackish:#252525;
-
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 /*********** Header Section Start *************/
-.codeco-header{
+.codeco--header{
     width: 100%;
     height: 598px;
     background: url(https://drive.google.com/uc?export=view&id=1lNSvvd6wUo40dZ2VIDzQTW3JjuWvP693 );
     background-size: cover;
     background-position: center;
-    background-color: var(--black-60);
-     
+    background-color: var(--black-60);   
 }
-.codeco-header_overlay{
+.codeco--header__overlay{
     width: 100%;
     height: 100%;
     position: relative;
@@ -41,13 +38,11 @@
     left: 0;
     background-color: var(--black-60);
 }
-.codeco-navigation{ 
+.navigation{ 
     position: sticky;
     top: 0;
 }
- 
- 
-.codeco-navigation_menulist{
+.navigation--menu__list{
     width: 100%;
     height: 68px;
     text-align: center;
@@ -58,125 +53,120 @@
     margin-bottom: 147px;
     display: flow-root;
 }
-.codeco-navigation_menulist li{
+.navigation--menu__list li{
     display: inline-block;
     list-style: none;
 }
-.codeco-navigation_menu-link{
+.navigation--menu__link{
     padding: 12px 0;
     font-size: 14px;
     font-weight: bold;
-    margin-right: 31px;
+    margin-left: 31px;
     font-family: var(--ff-open-sans);
- 
 }
-.codeco-navigation_menu-link a{
+.navigation--menu__link a{
     color: var(--white-color);
     text-decoration: none;
 }
-.codeco-navigation_menulist a:hover,a:active{
+.navigation--menu__link a:hover{
     color: var(--black-color);
 }
-.codeco-navigation_menulist a:visited{
-    color: var(--white-color);
-}
-.codeco-navigation_logo{
+.brand--logo{
     width: 76px;
     height: 44px;
     margin-left:40px ;
     float: left;
 }
-.codeco-navigation_logo a{
+.brand--logo a{
     line-height: 0;
     display:block;
 }
-.codeco-navigation_trynow-btn{
+.nav--button{
     float: right;
-    padding: 14px 10px 14px 10px ;
     margin-right: 48px;
-    width: 129px;
-    background-color: var(--clear-blue);
+}
+.cta--primary{
+    background-color: #2086fb;
+    padding: 12px 29px 12px 30px;
     border-radius: 22px;
-    font-family: var(--ff-open-sans);
-}
-.codeco-navigation_trynow-btn a{
-    color: var(--white-color);
     text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--ff-open-sans);
+    text-align: center;
 }
-.codeco-banner_heading{
-    width: 813px;
-    margin: 0 auto;
+.cta--primary:hover{
+    color: var(--black-color);
+}
+.container--title{
     font-family: var(--ff-open-sans);
     font-size: 30px;
     font-weight: 600;
     text-align: center;
     color: var(--white-color);
 }
-.codeco-search_content{
+
+.search--bar{
     padding-top: 24px;
 }
-.codeco-search_outercontainer{
+.search--wrap{
     width: 936px;
     height: 64px;
     padding: 6px 5px 5px;
     opacity: 0.9;
     border-radius: 4px;
     background-color:var(--clear-white);
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
-.codeco-search_contanier{
+.search--field{
     width: 926px;
-    height: 53px;
-    padding: 15px 20px 16px;
     background-color: var(--white-color);
 }
      
-#codeco-search_input{
-    width: 367px;
-    height: 22px;
+#search--field__input{
+    width: calc(100% - 44px);
+    padding:15px;
     font-size: 16px;
-    color: var(--greyish);
+    color: #9b9b9b;
     border: none;
     font-family: var(--ff-open-sans);
+    outline: none;
 
 }
-.codeco-search_icon{
+.search--submit__button{
     float: right;
-    width: 20px;
-    height: 20px;
-    background-color: var(--greyish-brown);
+    background-color: var(--white-color);
+    padding: 16px 11px 11px 11px;
+    border:0;
+    cursor:pointer;
 }
+ 
 /******** search box end **********/
 
 /*********** Header Section End ***************/
 
 
 /*********** Main Section start ***************/
-.grid-container_first-row{
+.product--contanier__first--row{
    display: flow-root;
    margin: 0 auto;
-   padding: 0 15px;
-   padding-top: 41px;
+   padding:41px 15px 0 15px;
 }
-.grid-container_box {
+.product--contanier {
     width: calc((100% - 64px) / 4);
     height: 328px;
     margin-right: 16px;
     border-right: 1px solid var(--whitish);
     float: left;
-}
-.card-1{
     text-align: center;
     padding:52px 32px 62px 32px;
 }
-.grid-container_box  h6{
+
+.product--contanier  h6{
     font-size: 18px;
     font-weight: 600;
-    text-align: center;
     font-family: var(--ff-open-sans);
 }
-.grid-container_box  p{
+.product--contanier  p{
     font-family: var(--ff-open-sans);
     margin: 10px 0 0;
     font-size: 16px;
@@ -184,66 +174,55 @@
     text-align: center;
     color:var(--grey);
 }
-#last-box_1{
-    text-align: center;
+.card{
     margin-right: 0;
-    padding: 52px 32px 62px 32px;
     border: none;
-} 
+}
 /* general */
-.box-heading_general{
+.card--title__general{
     margin: 24px 42px 0px 42px;   
 }
 /* implementing */
-.box-heading_implementing{
+.card--title__implementing{
     margin: 24px 50px 0px 50px; 
 }
 /* tutorial*/
-.box-heading_tutorial{
-    margin: 24px 50px 0px 50px;
+.card--title__tutorial{
+    margin: 24px 45px 0px 45px;
 }
 /* last */
-.box-heading_basic{
+.card--title__basic{
     margin: 24px 35px 0 35px;
 }
  /*hr  */
-.line-break{
+.divider--line{
     height: 1px;
     width:calc(100% - 80px);
     color: var(--whitish);
     margin: 0 auto;
 }
 /* 2 row */
-.grid-container_second-row{
+.product--contanier__second--row{
     display: flow-root;
     margin: 0 auto;
-    padding: 0 15px;
-    padding-bottom: 32px;
+    padding: 0 15px 32px 15px;
 }
-.card-2{
-    text-align: center;
-    padding:61px 32px 62px 32px;
-}
-#last-box_2{
-    text-align: center;
-    margin-right: 0;
-    padding: 61px 32px 62px 32px;
-    border: none;
-}
+
+
  /* how to */
- .box-heading_how{
+ .card--title__how{
     margin: 24px 80px 0px 80px;
 }
 /* api */
-.box-heading_api{
+.card--title__api{
     margin: 24px 51px 0px 52px;
 }
 /* trouble */
-.box-heading_trouble{
+.card--title__trouble{
     margin: 24px 42px 0px 42px;
 }
 /* costumer */
-.box-heading_costumer{
+.card--title__costumer{
     margin: 24px 20px 0px 20px;
 }
 
@@ -251,68 +230,37 @@
 
 /*********** Sub-Footer Section start ***************/
  
-.sub-footer_container{
-    background-color: var(--black-five);
+.subfooter--container{
     width: 100%;
+    background-color: var(--black-five);
     padding-top: 64px;
     padding-bottom:69px ;
-}
-.sub-footer_content{
-    margin: 0 auto;
-    font-family: var(--ff-open-sans);
-    font-weight: 600;
     text-align: center;
-    color: var(--white-color);
-
 }
-.sub-footer_container h4{
-    font-size: 30px;
-}
-.chat{
-    padding-top: 4px;
+.subfooter--content{
+    font-family: var(--ff-open-sans);
     font-size: 16px;
-}
-.sub-footer_request-container{
-    padding-top: 48px;
-}
-.sub-footer_request-button{
-    margin: 0 auto;
-    width: 223px;
-    height: 40px;
-    padding: 10px 31px 12px 25px;
-    text-align: center;
-    border-radius: 22px;
-    background-color: var(--clear-blue);
-}
-.sub-footer_request-button a{
-    font-family: var(--ff-open-sans);
-    width: 127px;
-    height: 18px;
-    font-size: 15px;
     font-weight: 600;
-    text-align: center;
     color: var(--white-color);
-    text-decoration: none;
-}
-.sub-footer_request-button a:hover{
-    color: var(--black-color);
+   padding-top: 4px;
+   padding-bottom: 48px;
 }
 /*********** Sub-Footer Section End ***************/
 
 
 /******** Footer Section *********/
-footer{
+.footer--container{
     width: 100%;
     padding: 25px 0 24px 40px;
     background-color:var(--blackish);
 }
-.footer-copyright_content{
+.footer--copyright__content{
     font-family: var(--ff-open-sans);
     font-size: 14px;
     font-weight: 600;
     color: var(--white-color);
 }
-.footer-back_to_top-btutton{
+.footer--backToTo__button{
     width: 28px;
     height: 28px;
     border-radius: 4px;
@@ -322,7 +270,7 @@ footer{
     bottom: 50px;
     left:calc(100% - 50px);
 }
-.footer-back_to_top-btutton a{
+.footer--backToTo__button a{
     display: inline-block;
     line-height: 0;
 }
