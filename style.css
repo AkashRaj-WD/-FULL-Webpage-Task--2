@@ -173,7 +173,7 @@ header{
 .product--contanier__first--row{
     display: flow-root;
     margin: 0 auto;
-    padding:41px 15px 0 15px;
+    padding:41px 15px 40px 15px;
 } 
 .product--contanier {
     width: calc((100% - 64px) / 4);
