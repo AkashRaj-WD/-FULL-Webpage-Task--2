@@ -30,8 +30,6 @@ header{
     z-index: 1;
 }
 .banner{
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
     background: url(https://drive.google.com/uc?export=view&id=1lNSvvd6wUo40dZ2VIDzQTW3JjuWvP693 );
@@ -42,10 +40,15 @@ header{
 .codeco--header__overlay{
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
     background-color: var(--black-60);
+}
+.hero{
+    width: 100%;
+    max-height: 568px;
+    position:absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 .navigation{
     width: 100%;
@@ -61,11 +64,10 @@ header{
 .brand--logo{
     float: left;
     margin-left:40px ;
-     line-height: 0;
+    line-height: 0;
     display:block;
 } 
 .cta--primary{
-    float: right;
     background-color: #2086fb;
     padding: 12px 29px 12px 30px;
     border-radius: 22px;
@@ -77,6 +79,9 @@ header{
 .cta--primary:hover{
     color: var(--black-color);
 } 
+.trynow-btn{
+        float: right;
+}
 .navigation--menu__list{
     display: flow-root;
 }
@@ -109,7 +114,7 @@ header{
 #check{
     display: none;
 }
-.dropdown--menu{
+.mobile-nav{
     list-style: none;
     width: 100%;
     height: 100vh;
@@ -121,19 +126,20 @@ header{
     background-color: #757575;
     display: none;
 }
-.dropdown--menu .navigation--menu__link{
+.mobile-nav .navigation--menu__link{
     margin-left: 0;
 }
-.nav--button{
-    margin-right: 0;
-    float: none;
-}
-.hero{
+/* .hero{
     width: 100%;
+    height: 100vh;
+    max-height: 538px;
     position:absolute;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
+} */
+.hero h3{
+    margin-bottom: 24px;
 }
 .title{
     font-family: var(--ff-open-sans);
@@ -141,16 +147,15 @@ header{
     font-weight: 600;
     text-align: center;
     color: var(--white-color);
-    padding-bottom: 24px;
 }
 .search--field{
-    width: 936px;
+    max-width: 926px;
+    width: 100%;
     height: 64px;
     opacity: 0.9;
     border-radius: 4px;
     border:4px solid var(--clear-white);
     margin: 0 auto; 
-    width: 926px;
     background-color: var(--white-color);
 }
 #search--field__input{
@@ -217,17 +222,21 @@ header{
     padding-bottom:69px ;
     text-align: center;
 }
+.subfooter--container h4{
+    margin-bottom: 4px;
+}
 .subfooter--container p{
     font-family: var(--ff-open-sans);
     font-size: 16px;
     font-weight: 600;
     color: var(--white-color);
-   padding-top: 4px;
-   padding-bottom: 48px;
+    margin-bottom: 48px;
+}
+.subfooter--container span{
+    display: block;
 }
 .subfooter--container a{
-    float: none;
-    margin-right: 0;
+     display: inline-block;
 }
 .footer--container{
     width: 100%;
@@ -263,7 +272,7 @@ header{
     .checkbtn{
         display: block;
     }
-    .dropdown--menu{
+    .mobile-nav{
         display: block;
         left: -100%;
         transition: all .5s;
@@ -271,11 +280,11 @@ header{
     .navigation--menu__list{
         display: none;
     }
-    #check:checked ~ .dropdown--menu {
+    #check:checked ~ .mobile-nav {
         left: 0;
     }
     .title{
-        font-size:20px;
+        font-size:22px;
     }
     .search--field{
         display: none;
@@ -290,35 +299,17 @@ header{
         border: none;
     } 
 }
-@media screen and (min-width:390px) {
-    .title{
-        font-size:24px;
-    }
-    .search--field{
-        display:block;
-        width: 356px;
-    }
-
-}
 @media screen and (min-width:540px) {
-    .title{
-        font-size:24px;
-    }
-    .search--field{
-        display:block;
-        width: 486px;
-    }
-
-}
-/* 768px */
-@media screen and (min-width:768px){
     .title{
         font-size:26px;
     }
     .search--field{
         display:block;
-        width: 736px;
     }
+
+}
+/* 768px */
+@media screen and (min-width:768px){
     .product--contanier {
         width: calc((100% - 32px) / 2);
         height: 328px;
@@ -341,17 +332,13 @@ header{
     .title{
         font-size:30px;
     }
-    .search--field{
-        display:block;
-        width: 886px;
-    }
 } 
 /* 1024px */
 @media screen and (min-width:1024px){
     .checkbtn{
         display: none;
     }
-    .dropdown--menu{
+    .mobile-nav{
         display: none;
     }
     .navigation--menu__list{
